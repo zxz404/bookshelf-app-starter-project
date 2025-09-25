@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e5beb5;
+}
+
+header {
+  background-color: #715a5a;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+header h1 i {
+  margin-right: 12px;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d2;
+  pading-bottom: 1rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  background-color: #eee6ca;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+}
+
+.data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main h2 i {
+  margin-right: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: black;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#bookFormSubmit {
+  background-color: #2ecc71;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#searchSubmit {
+  background-color: #896c6c;
+}
+.search-book {
+  border-radius: 5px;
+  padding: 1rem;
+  border-left: 8px solid #896c6c;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-book > label > i {
+  margin-right: 12px;
+}
+.book-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f5fae1;
+  border-radius: 8px;
+}
+
+.book-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item h3 {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.book-item p {
+  color: black;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+}
+
+.book-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.book-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-top: 0;
+}
+
+.book-actions .complete-btn {
+  background-color: #2ecc71;
+}
+
+.book-actions .incomplete-btn {
+  background-color: #8c1007;
+}
+
+.book-actions .delete-btn {
+  background-color: #dc143c;
+}
+
+.book-actions .edit-btn {
+  background-color: #3498db;
+}
+.modal .complete-button {
+    background-color: #2ecc71;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #aaa;
+  cursor: pointer;
+}
